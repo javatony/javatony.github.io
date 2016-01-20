@@ -7,27 +7,31 @@ body {
   background-color: teal;
 }
 
+.nav-links li {
+  display: inline-block;
+}
+
+
 .nav-links{
+  display: block;
   text-align: center;
   margin-top: 6px;
   margin-bottom: 6px;
+  margin-left: -55px;
 
 }
 
-.nav-links li {
-  display: block;
+.nav-text{
+  display: none;
 }
 
 .nav-links a {
-  padding: 10px 15px;
+  padding: 0px 20px;
   display: block;
   color: #556677;
   text-decoration: none;
-
   margin-left: 10px;
   margin-right: 10px;
-  display: block;
-
 }
 
 .nav-links a:hover {
@@ -35,11 +39,12 @@ body {
 }
 
 .main-header{
-  width:  100%;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  background: #fff;
-
+    width:  100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
 .container{
@@ -61,11 +66,7 @@ ul{
   list-style-type: none;
 }
 
-li{
-  margin-top: 6px;
-  margin-bottom: 6px;
-  background-color: #fff;
-}
+
 
 .content{
   padding-left: 1em;
@@ -88,7 +89,6 @@ li{
 .intro-message{
   font-style: italic;
 }
-
 
 /*=======
 Image
@@ -146,9 +146,23 @@ Images/Icons
     margin: 0 auto;
   }
 
+  .nav-links{
+   display: block;
+  }
 
-  .nav-links li{
+  .nav-links a {
+  padding: 10px 15px;
+  display: block;
+  color: #556677;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+  .nav-links li {
     display: inline-block;
+    margin-top: 6px;
+    margin-bottom: 6px;
   }
 
   .icon-container{
@@ -171,6 +185,10 @@ Images/Icons
   }
 
   .main-header{
+    width:  100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background: #fff;
     position: fixed;
     top: 0;
     z-index: 10;
@@ -183,10 +201,6 @@ Images/Icons
     z-index: -10;
   }
 
-  .content{
-
-  }
-
   .clearfix::after{
     content: "";
     display: table;
@@ -195,13 +209,10 @@ Images/Icons
 
 
 
-/********
-Used to display two columns
-********/
-  /*.col {
-    display: inline-block;
-    width: 49%;
-    vertical-align: top;
-    background-color: red;
-  }*/
+/*TEST*/
+.nav-img{
+  display: none;
+}
+.nav-text{
+  display: block;
 }
