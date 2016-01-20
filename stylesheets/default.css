@@ -1,0 +1,207 @@
+body {
+  font-family: 'Verdana', serif;
+  font-size: 15px;
+}
+
+.header{
+  background-color: teal;
+}
+
+.nav-links{
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+
+}
+
+.nav-links li {
+  display: block;
+}
+
+.nav-links a {
+  padding: 10px 15px;
+  display: block;
+  color: #556677;
+  text-decoration: none;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+
+}
+
+.nav-links a:hover {
+  color: #093a58;
+}
+
+.main-header{
+  width:  100%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  background: #fff;
+
+}
+
+.container{
+  text-align: center;
+
+}
+
+
+.footer{
+  padding: 1em;
+  background-color: gray;
+}
+
+.wrap{
+  min-height: 100vh;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  margin-top: 6px;
+  margin-bottom: 6px;
+  background-color: #fff;
+}
+
+.content{
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 47px;
+  text-align: center;
+}
+
+.line{
+  color: #fff;
+  text-align: center;
+  font-size: 250%;
+  text-shadow: 0 0 1px #fff,0 1px 2px rgba(0,0,0,0.45);
+}
+
+.primary{
+    padding-top: 4em;
+  }
+
+.intro-message{
+  font-style: italic;
+}
+
+
+/*=======
+Image
+========*/
+
+.image{
+  background-color: red;
+  background-image: url(../img/mountain2copy.jpeg);
+  background-size: auto;
+  padding-top: 17em;
+  padding-bottom: 16em;
+  background-repeat: no-repeat;
+  background-position: 54% 53%;
+
+}
+
+
+/************************
+Images/Icons
+************************/
+
+.personal-icon{
+  border-radius: 90px;
+}
+
+.work-icon{
+  margin-bottom: 16.5px;
+  margin-top: 16.5px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  display: block;
+}
+
+.contact-icon{
+  margin: auto;
+  padding: 16.5px;
+  display: block;
+
+}
+
+/* =======================================
+  Media Queries
+=========================================*/
+@media (min-width: 769px){
+
+  .wrap{
+    position: relative;
+    top: 591px;
+    background-color: #fff;
+  }
+
+  .container{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+
+  .nav-links li{
+    display: inline-block;
+  }
+
+  .icon-container{
+    overflow: auto;
+    margin-left: 60px;
+    text-align: center;
+
+  }
+  .parkly-icon{
+    float: left;
+
+  }
+
+  .citysights-icon{
+    float: left;
+
+  }
+  .contact-icon{
+    display: inline-block;
+  }
+
+  .main-header{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  }
+
+  .image{
+    width: 100%;
+    position: fixed;
+    z-index: -10;
+  }
+
+  .content{
+
+  }
+
+  .clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+/********
+Used to display two columns
+********/
+  /*.col {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    background-color: red;
+  }*/
+}
