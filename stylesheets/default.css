@@ -117,7 +117,7 @@ Images/Icons
 .work-icon{
   margin-bottom: 16.5px;
   margin-top: 16.5px;
-  margin-left: auto;
+  margin-left: 5px;
   margin-right: auto;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   display: block;
@@ -171,15 +171,28 @@ Images/Icons
     text-align: center;
 
   }
-  .parkly-icon{
-    float: left;
 
+  .parkly-icon,
+  .citysights-icon,
+  .dev-icon,
+  .ucsd-icon{
+    float: left;
   }
 
+
+  .parkly-icon,
   .citysights-icon{
-    float: left;
-
+    margin-right: 8em;
   }
+
+  .dev-icon{
+    margin-right: 10em;
+  }
+
+  .ucsd-icon{
+    margin-right: 8em;
+  }
+
   .contact-icon{
     display: inline-block;
   }
@@ -199,6 +212,11 @@ Images/Icons
     width: 100%;
     position: fixed;
     z-index: -10;
+  }
+
+  .description{
+    width: 100%;
+    text-align: left;
   }
 
   .clearfix::after{
