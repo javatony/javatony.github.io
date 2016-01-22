@@ -52,6 +52,18 @@ body {
 
 }
 
+.icon-container{
+  margin-bottom: 5em;
+}
+
+.description-wrap{
+
+}
+
+.description{
+  margin: 0 60px;
+
+}
 
 .footer{
   padding: 1em;
@@ -65,8 +77,6 @@ body {
 ul{
   list-style-type: none;
 }
-
-
 
 .content{
   padding-left: 1em;
@@ -120,7 +130,6 @@ Images/Icons
   margin-left: 5px;
   margin-right: auto;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  display: block;
 }
 
 .contact-icon{
@@ -169,6 +178,7 @@ Images/Icons
     overflow: auto;
     margin-left: 60px;
     text-align: center;
+    padding-bottom: 2em;
 
   }
 
@@ -182,15 +192,15 @@ Images/Icons
 
   .parkly-icon,
   .citysights-icon{
-    margin-right: 8em;
+    margin-right: 5em;
   }
 
   .dev-icon{
-    margin-right: 10em;
+    margin-right: 7em;
   }
 
   .ucsd-icon{
-    margin-right: 8em;
+    margin-right: 5em;
   }
 
   .contact-icon{
@@ -217,6 +227,8 @@ Images/Icons
   .description{
     width: 100%;
     text-align: left;
+    margin: 0 0;
+
   }
 
   .clearfix::after{
