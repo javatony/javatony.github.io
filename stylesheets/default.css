@@ -1,0 +1,256 @@
+body {
+  font-family: 'Verdana', serif;
+  font-size: 15px;
+}
+
+.anchor{
+  display: block;
+  height: 62px;
+  margin-top: -62px;
+  visibility: hidden;
+}
+
+
+.header{
+  background-color: teal;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+
+.nav-links{
+  display: block;
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: -55px;
+
+}
+
+.nav-text{
+  display: none;
+}
+
+.nav-links a {
+  padding: 0px 20px;
+  display: block;
+  color: #556677;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-links a:hover {
+  color: #093a58;
+}
+
+.main-header{
+    width:  100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.container{
+  text-align: center;
+
+}
+
+.icon-container{
+  margin-bottom: 5em;
+}
+
+.description-wrap{
+
+}
+
+.description{
+  margin: 0 60px;
+
+}
+
+.footer{
+  padding: 1em;
+  background-color: gray;
+}
+
+.wrap{
+  min-height: 100vh;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.content{
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 47px;
+  text-align: center;
+}
+
+.line{
+  color: #fff;
+  text-align: center;
+  font-size: 250%;
+  text-shadow: 0 0 1px #fff,0 1px 2px rgba(0,0,0,0.45);
+}
+
+.primary{
+    padding-top: 4em;
+  }
+
+.italic{
+  font-style: italic;
+}
+
+/*=======
+Image
+========*/
+
+.image{
+  background-color: red;
+  background-image: url(../img/mountain2copy.jpeg);
+  background-size: auto;
+  padding-top: 17em;
+  padding-bottom: 16em;
+  background-repeat: no-repeat;
+  background-position: 54% 53%;
+
+}
+
+
+/************************
+Images/Icons
+************************/
+
+.personal-icon{
+  border-radius: 90px;
+}
+
+.work-icon{
+  margin-bottom: 16.5px;
+  margin-top: 16.5px;
+  margin-left: 5px;
+  margin-right: auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.contact-icon{
+  margin: auto;
+  padding: 16.5px;
+  display: block;
+
+}
+
+/* =======================================
+  Media Queries
+=========================================*/
+@media (min-width: 769px){
+
+  .wrap{
+    position: relative;
+    top: 591px;
+    background-color: #fff;
+  }
+
+  .container{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .nav-links{
+   display: block;
+  }
+
+  .nav-links a {
+  padding: 10px 15px;
+  display: block;
+  color: #556677;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+  .nav-links li {
+    display: inline-block;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  .icon-container{
+    overflow: auto;
+    margin-left: 60px;
+    text-align: center;
+    padding-bottom: 2em;
+
+  }
+
+  .parkly-icon,
+  .citysights-icon,
+  .dev-icon,
+  .ucsd-icon{
+    float: left;
+  }
+
+
+  .parkly-icon,
+  .citysights-icon{
+    margin-right: 5em;
+  }
+
+  .dev-icon{
+    margin-right: 7em;
+  }
+
+  .ucsd-icon{
+    margin-right: 5em;
+  }
+
+  .contact-icon{
+    display: inline-block;
+  }
+
+  .main-header{
+    width:  100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  }
+
+  .image{
+    width: 100%;
+    position: fixed;
+    z-index: -10;
+  }
+
+  .description{
+    width: 100%;
+    text-align: left;
+    margin: 0 0;
+
+  }
+
+  .clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+/*TEST*/
+.nav-img{
+  display: none;
+}
+.nav-text{
+  display: block;
+}
